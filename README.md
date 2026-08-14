@@ -1,16 +1,72 @@
-# React + Vite
+# Monitoreo de Sensores IoT
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web para monitorear datos de sensores en tiempo real usando React, Vite y Firebase.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Dashboard en tiempo real con datos de sensores
+- Visualización de ubicaciones de sensores
+- Conexión a Firebase Realtime Database
+- Interfaz responsive con componentes reutilizables
+- Hot Module Reloading (HMR) en desarrollo
 
-## React Compiler
+## 📋 Requisitos previos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 16 o superior
+- npm o yarn
 
-## Expanding the Oxlint configuration
+## ⚙️ Instalación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Clonar el repositorio
+```bash
+git clone <url-repositorio>
+cd monitoreo
+```
+
+2. Instalar dependencias
+```bash
+npm install
+```
+
+3. Configurar variables de entorno (.env)
+```
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=...
+VITE_FIREBASE_DATABASE_URL=...
+VITE_FIREBASE_PROJECT_ID=...
+VITE_FIREBASE_STORAGE_BUCKET=...
+VITE_FIREBASE_MESSAGING_SENDER_ID=...
+VITE_FIREBASE_APP_ID=...
+```
+
+## 🏃 Uso
+
+**Desarrollo:**
+```bash
+npm run dev
+```
+
+**Build para producción:**
+```bash
+npm run build
+```
+
+**Preview de build:**
+```bash
+npm run preview
+```
+
+## 📁 Estructura del Proyecto
+
+- `src/components/` - Componentes React reutilizables
+- `src/pages/` - Páginas principales (Dashboard, Ubicaciones)
+- `src/hooks/` - Hooks personalizados (useSensorData)
+- `src/services/` - Servicios (Firebase)
+- `public/` - Archivos estáticos
+
+## 🛠️ Tecnologías
+
+- React 18
+- Vite
+- Firebase Realtime Database
+- CSS3
